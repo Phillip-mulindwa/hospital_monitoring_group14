@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 archive_dir="archived_logs_group14" logfile="backup_log.txt"
 mkdir -p $archive_dir
 mv heart_rate_log.txt_* $archive_dir/ 2>/dev/null && echo "$(date): Files archived to $archive_dir." >> $logfile || echo "$(date): No archived files found." >> $logfile
